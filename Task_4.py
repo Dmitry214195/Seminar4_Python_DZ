@@ -2,24 +2,19 @@
 # Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена 
 # и записать в файл многочлен степени k. 
 
-
 import random
 
-
 def write_file(st):
-    with open('file33.txt', 'w') as data:
+    with open('file1.txt', 'w') as data:
         data.write(st)
-
 
 def rnd():
     return random.randint(0,101)
-
 
 def create_mn(k):
     lst = [rnd() for i in range(k+1)]
     return lst
     
-
 def create_str(sp):
     lst= sp[::-1]
     wr = ''
